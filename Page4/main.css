@@ -1,0 +1,153 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: 'Avenir Next Medium';
+  src: url("fonts/AvenirNext-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Avenir Next Regular';
+  src: url("fonts/AvenirNext-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Avenir Next DemiBold';
+  src: url("fonts/AvenirNext-DemiBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  width: 100%;
+  height: calc(100vh - 140px);
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: url("img/page4/background-mosaic.png") 100% 100%; }
+
+.container {
+  max-width: 1000px;
+  /*Max-width should be received from designer*/
+  text-align: center;
+  height: 100%;
+  margin: 0 auto; }
+
+.pagename {
+  font-family: "Avenir Next Medium";
+  font-size: 10pt;
+  color: #666666;
+  padding: 30px 0 21px 0;
+  text-transform: uppercase; }
+
+.slogan {
+  font-family: "Avenir Next Regular";
+  font-size: 30pt;
+  color: #666666;
+  padding-bottom: 30px;
+  width: 60%;
+  margin: 0 auto;
+  line-height: 57px; }
+  .slogan__important {
+    background-color: #FF7D4A;
+    height: 36px;
+    color: #ffffff; }
+
+.description {
+  font-family: "Avenir Next Regular";
+  font-size: 14pt;
+  color: #1A1A1A;
+  padding-bottom: 64px;
+  width: 65%;
+  margin: 0 auto; }
+
+.picbuilder {
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 100%;
+  white-space: nowrap;
+  margin: 0 auto; }
+  .picbuilder__item {
+    width: 200px;
+    height: 270px;
+    display: inline-block;
+    margin-right: 26px;
+    box-shadow: 0 0 4px -2px;
+    white-space: normal;
+    vertical-align: middle;
+    background-color: #ffffff; }
+    .picbuilder__item:last-child {
+      margin: 0; }
+  .picbuilder__image {
+    width: 200px;
+    height: auto; }
+  .picbuilder__slogan {
+    font-family: "Avenir Next DemiBold";
+    font-size: 10pt;
+    color: #666666;
+    padding: 12px; }
+  .picbuilder__about {
+    font-family: "Avenir Next Regular";
+    font-size: 10pt;
+    color: #666666;
+    padding: 0 12px; }
+  .picbuilder__logo {
+    width: 50%;
+    height: auto;
+    padding: 12px 0;
+    /*Atomic CSS, should be removed with the proper design*/ }
+    .picbuilder__logo_first {
+      margin: 20px auto; }
+    .picbuilder__logo_second {
+      margin: 20px auto; }
+    .picbuilder__logo_third {
+      /*margin: 10px 20px 30px 40px;*/ }
+    .picbuilder__logo_fourth {
+      margin: 10px auto; }
+  .picbuilder__temp {
+    color: red; }

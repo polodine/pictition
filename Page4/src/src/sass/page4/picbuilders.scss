@@ -1,0 +1,53 @@
+.picbuilder {
+	overflow-x: scroll;
+	overflow-y: hidden;
+	width: 100%;
+	white-space: nowrap;
+	margin: 0 auto;
+	&__item {
+		width: 200px;
+		height: 270px;
+		display: inline-block;
+		margin-right: 26px;
+		box-shadow: 0 0 4px -2px;
+		white-space: normal;
+		vertical-align: middle;
+		background-color: #ffffff;
+		&:last-child {
+			margin: 0;
+		}
+	}
+	&__image {
+		width: 200px;
+		height: auto;
+	}
+	&__slogan {
+		@include font('Avenir Next DemiBold', 10pt, #666666);
+		padding: 12px;
+	}
+	&__about {
+		@include font('Avenir Next Regular', 10pt, #666666);
+		padding: 0 12px;
+	}
+	&__logo {
+		width: 50%;
+		height: auto;
+		padding: 12px 0;
+		/*Atomic CSS, should be removed with the proper design*/
+		&_first {
+			margin: 20px auto;
+		}
+		&_second {
+			margin: 20px auto;
+		}
+		&_third {
+			/*margin: 10px 20px 30px 40px;*/
+		}
+		&_fourth {
+			margin: 10px auto;
+		}
+	}
+	&__temp {
+		color: red;
+	}
+}

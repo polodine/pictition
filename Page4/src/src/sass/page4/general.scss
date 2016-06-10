@@ -1,0 +1,41 @@
+body {
+	width: 100%;	
+	height: calc(100vh - 140px);
+	overflow-x: hidden;
+	overflow-y: auto;
+	background: url('img/page4/background-mosaic.png') 100% 100%;
+}
+
+.container {
+	max-width: 1000px;
+/*Max-width should be received from designer*/
+	text-align: center;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.pagename {
+	@include font('Avenir Next Medium', 10pt, #666666);
+	padding: 30px 0 21px 0;
+	text-transform: uppercase;
+}
+
+.slogan {
+	@include font('Avenir Next Regular', 30pt, #666666);
+	padding-bottom: 30px;
+	width: 60%;
+	margin: 0 auto;
+	line-height: 57px;
+	&__important {
+		background-color: #FF7D4A;
+		height: 36px;
+		color: #ffffff;
+	}
+}
+
+.description {
+	@include font('Avenir Next Regular', 14pt, #1A1A1A);
+	padding-bottom: 64px;
+	width: 65%;
+	margin: 0 auto;
+}
